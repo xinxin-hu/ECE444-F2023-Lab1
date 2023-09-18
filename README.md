@@ -21,3 +21,9 @@ launch example 2-2 in virtual environment
 commit of example 2-2
 ![Alt text](ScreenShot/ex2-1_commit.PNG)
 
+#### Activity 3: replay and modify chapter 3 exmaple
+chapter 3 example modified
+![Alt text](ScreenShot/activity3_user_page.PNG)
+
+commit of chapter 3 exmaple
+![Alt text](ScreenShot/activity3_commit.PNG)
