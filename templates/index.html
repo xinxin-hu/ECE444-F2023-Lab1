@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <h1>Hello World!</h1>
-</head>
-<body>
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+    {% block title %}ECE444-F2023-Lab1{% endblock %}
 
-</body>
-</html>
+    {% block page_content %}
+        <div class="page-header">
+            <h1>Hello, {% if name %}{{ name}}{% else %} Stranger {% endif %}!</h1>
+        </div>
+       {{wtf.quick_form(form)}}
+    {% endblock %}
