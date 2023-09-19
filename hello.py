@@ -29,6 +29,8 @@ def index():
             flash('Looks like you have changed your email!')
         if uoftEmail in form.email.data:
             session['uoftEmail'] = True
+        else:
+            session['uoftEmail'] = False
         session['name'] = form.name.data
         session['email'] = form.email.data
         form.name.data = ' '
