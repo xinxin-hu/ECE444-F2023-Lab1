@@ -27,3 +27,22 @@ chapter 3 example modified
 
 commit of chapter 3 exmaple
 ![Alt text](ScreenShot/activity3_commit.PNG)
+
+#### Activity 4: Replay and modify example in Chapter 4
+example 4-7 from chapter 4
+![Alt text](ScreenShot/activity4_example_replay.PNG)
+
+commit for exmaple 4-7
+![Alt text](ScreenShot/activity4_commit_1.PNG)
+
+activity 4.2
+![Alt text](ScreenShot/activity4.2.PNG)
+
+activity 4.3
+![Alt text](ScreenShot/activity4.3.PNG)
+
+activity 4.4
+![Alt text](ScreenShot/activity4.4.PNG)
+
+activity 4.5
+![Alt text](ScreenShot/activity4.5.PNG)
