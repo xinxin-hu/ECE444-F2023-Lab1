@@ -5,17 +5,41 @@ from datetime import datetime
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired,Email,InputRequired,Regexp
+from flask_sqlalchemy import SQLAlchemy
 import email_validator
+import os
 
+basedir = os.path.abspath(os.path.dirname(__file__))
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'a string nobody knows'
 bootstrap = Bootstrap(app)
 moment = Moment(app)
 
+app.config['SQLALCHEMY_DATABASE_URI'] =\
+'sqlite:///' + os.path.join(basedir, 'data.sqlite')
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db = SQLAlchemy(app) # this db object represents the database and provides access to all the functionality of Flask-SQLAlchemy
 class NameAndEmailForm (FlaskForm):
     name = StringField('What is your name?', validators=[DataRequired()]) # 'name' is used when rendering form to HTML
     email =StringField('What is your UofT Email address?',validators=[Email()])
     submit = SubmitField('Submit')
+
+class Role(db.Model):
+    __tablename__='roles'
+    id = db.Column(db.Integer, primary_key=True)
+    name =db.Column(db.String(64), unique=True)
+    users = db.relationship('User', backref='role') #variable "users" must match with table name
+
+    def __repr__(self):
+        return '<Role %r>' % self.name
+
+class User(db.Model):
+    __tablename__ = 'users'
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(64), unique=True, index=True)
+    role_id = db.Column(db.Integer, db.ForeignKey('roles.id')) # be aware of the table name
+    def __repr__(self): #Used for debugging and testing purposes
+        return '<User %r>' % self.username
 @app.route('/', methods=['GET', 'POST']) #when methods not specified, takes 'GET' method only
 def index():
     form = NameAndEmailForm()
