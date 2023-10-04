@@ -11,3 +11,9 @@ This is a branch dedicate towards lab 3
 #### Activity 2: Docker Installation
 Docker Desktop has been installed succsuessfully
 ![Alt text](ScreenShot/Activity2_lab3_docker_install.PNG)
+
+#### Activity 3: Edit Title
+Before input name and email
+![Alt text](ScreenShot/Activity3_lab_3_modify_title.PNG)
+After input name and email
+![Alt text](ScreenShot/Activity3_lab_3_modify_title_2.PNG)
