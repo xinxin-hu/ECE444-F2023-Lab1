@@ -17,3 +17,7 @@ Before input name and email
 ![Alt text](ScreenShot/Activity3_lab_3_modify_title.PNG)
 After input name and email
 ![Alt text](ScreenShot/Activity3_lab_3_modify_title_2.PNG)
+
+#### Activity 4: Building and running the docker image locally
+the container is running
+![Alt text](ScreenShot/Activity4_lab3_docker_run.PNG)
