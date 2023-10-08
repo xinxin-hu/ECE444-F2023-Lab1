@@ -1,6 +1,6 @@
 FROM python:3.10-slim
 #LABEL maintainer="cynthiahu3727@gmail.com"
-COPY requirements.txt /app/requirements.txt
+COPY requirements.txt /app/
 WORKDIR /app
 RUN apt-get update
 RUN apt-get -y install gcc

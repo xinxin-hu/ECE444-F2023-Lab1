@@ -21,3 +21,8 @@ After input name and email
 #### Activity 4: Building and running the docker image locally
 the container is running
 ![Alt text](ScreenShot/Activity4_lab3_docker_run.PNG)
+have trouble with deploying with docker, the image created succuessfully and the container is running without any issue
+![Alt text](ScreenShot/Activity4_lab3_docker_deloy_problem.png)
+[Alt text](ScreenShot/Activity4_lab3_docker_deloy_problem2.png)
+![Alt text](ScreenShot/Activity4_lab3_docker_deloy_problem3.png)
+![Alt text](ScreenShot/Activity4_lab3_docker_deloy_problem4.png)
